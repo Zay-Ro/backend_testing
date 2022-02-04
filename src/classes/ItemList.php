@@ -7,12 +7,7 @@ class ItemList{
         $this->items = $items;
     }
 
-    public function getItems()
-    {
-        return $this->items;
-    }
-
-    public function getItemsInJson(){
+    public function getItemsInJson($value){
         return json_encode($this->items);
     }
 }
