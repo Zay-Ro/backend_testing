@@ -13,6 +13,6 @@ class ItemList{
     }
 
     public function getItemsInJson(){
-        return json_encode($this->getItems());
+        return json_encode($this->items);
     }
 }
