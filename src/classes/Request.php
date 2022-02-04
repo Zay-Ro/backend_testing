@@ -6,9 +6,9 @@ class Request{
 
     static function get_number()
     {
-        if (!is_int($_GET['NUMBER'])){
-            throw new Exception('Wrong get param NUMBER');
+        if ((int)$_GET['NUMBER']){
+            return $_GET['NUMBER'];
         }
-        return $_GET['NUMBER'];
+        else throw new ErrorException('Wrong get param NUMBER');
     } 
 }
